@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: khan/pull-request-workflow-cancel@master
         with:
-          workflows: ["example.yml", "second.yml"]
+          workflows: "example.yml | second.yml"
       - uses: actions/checkout@v2
       - run: echo 'Running now'
       - run: sleep 30

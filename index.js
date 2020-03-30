@@ -13,10 +13,7 @@ const run = async () => {
         return;
     }
 
-    const names =
-        typeof workflows === 'string'
-            ? workflows.split(',').map(m => m.trim())
-            : workflows;
+    const names = workflows.split('|').map(m => m.trim());
 
     if (!GITHUB_TOKEN) {
         core.setFailed('GITHUB_TOKEN env variable is required');

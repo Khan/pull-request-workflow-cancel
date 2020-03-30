@@ -2,7 +2,7 @@ name: 'Pull Request Workflow Cancel'
 description: 'Cancel stale workflow runs for the current pull-request'
 inputs:
   workflows:
-    description: 'Filenames of the workflows to check'
+    description: 'Filenames of the workflows to check, separated by a pipe |'
     required: true
 runs:
   using: 'node12'
