@@ -1,0 +1,12 @@
+name: 'Pull Request Workflow Cancel'
+description: 'Cancel stale workflow runs for the current pull-request'
+inputs:
+  workflows:
+    description: 'Filenames of the workflows to check'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: check-circle
+  color: red
