@@ -5,7 +5,7 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: khan/pull-request-workflow-cancel@8293ad1ad959a2f568f7bac3db9a51c77691f8c7
+      - uses: khan/pull-request-workflow-cancel@master
         with:
           workflows: "example.yml | second.yml"
         env:
