@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: khan/pull-request-workflow-cancel@master
         with:
-          workflows: ["example.yml", "second.yml"]
+          workflows: "example.yml | second.yml"
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       - uses: actions/checkout@v2
       - run: echo 'Running now'
       - run: sleep 30
