@@ -20,7 +20,7 @@ const run = async () => {
         return;
     }
 
-    // one
+    // two
 
     const client = new Octokit({ auth: `token ${GITHUB_TOKEN}` });
 
