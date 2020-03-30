@@ -3,7 +3,7 @@
 
 const core = require('@actions/core');
 const { context } = require('@actions/github');
-const Octokit = require('@octokit/rest').Octokit;
+const { Octokit } = require('@octokit/rest');
 
 const run = async () => {
     const { GITHUB_TOKEN } = process.env;
