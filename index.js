@@ -23,6 +23,7 @@ const run = async () => {
     const client = new Octokit({ auth: `token ${GITHUB_TOKEN}` });
 
     const pullRequest = context.payload.pull_request;
+
     const { owner, repo } = context.repo;
 
     const runsAndWorkflows = await Promise.all(
