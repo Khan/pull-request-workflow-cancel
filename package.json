@@ -1,0 +1,31 @@
+{
+    "name": "pull-request-workflow-cancel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "dist": "npx -p @zeit/ncc ncc build index.js",
+        "format": "prettier --write '*.js' --tab-width=4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Khan/pull-request-workflow-cancel.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Khan/pull-request-workflow-cancel/issues"
+    },
+    "homepage": "https://github.com/Khan/pull-request-workflow-cancel#readme",
+    "dependencies": {
+        "@actions/core": "^1.2.0",
+        "@actions/github": "^1.1.0",
+        "@octokit/rest": "^17.1.4",
+        "prettier": "^1.19.1",
+        "prettier-cli": "^0.1.0"
+    },
+    "devDependencies": {
+        "flow-bin": "^0.121.0"
+    }
+}
