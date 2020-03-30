@@ -20,8 +20,6 @@ const run = async () => {
         return;
     }
 
-    // two
-
     const client = new Octokit({ auth: `token ${GITHUB_TOKEN}` });
 
     const pullRequest = context.payload.pull_request;
