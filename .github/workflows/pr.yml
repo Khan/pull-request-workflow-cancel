@@ -5,9 +5,9 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: khan/pull-request-workflow-cancel@master
+      - uses: avdeev-dima-tutu/pull-request-workflow-cancel@master
         with:
-          workflows: "example.yml | second.yml"
+          workflows: "pr.yml"
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       - uses: actions/checkout@v2

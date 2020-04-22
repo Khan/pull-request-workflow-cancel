@@ -16,7 +16,7 @@ const run = async () => {
     const names = workflows.split('|').map(m => m.trim());
 
     if (!GITHUB_TOKEN) {
-        core.setFailed('GITHUB_TOKEN env variable is required');
+        core.setFailed('GITHUB_TOKEN env variable is required...');
         return;
     }
 
