@@ -8,6 +8,7 @@ Example usage:
 name: Pull Request Workflow Cancel Example
 on: [pull_request]
 
+
 jobs:
   hello:
     runs-on: ubuntu-latest
